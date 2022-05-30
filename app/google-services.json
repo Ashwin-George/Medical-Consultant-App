@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "377002581842",
+    "firebase_url": "https://hospital-interaction-app-default-rtdb.firebaseio.com",
+    "project_id": "hospital-interaction-app",
+    "storage_bucket": "hospital-interaction-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377002581842:android:3e2c539a09e01c649f648b",
+        "android_client_info": {
+          "package_name": "com.example.android.callingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "377002581842-jge92m0ae2518fm9o47sn4t9feoui016.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAooP-CbamSgPPsvNfBu-MX3Z7WbafGhrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "377002581842-jge92m0ae2518fm9o47sn4t9feoui016.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

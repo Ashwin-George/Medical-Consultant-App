@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <!-- Card View -->
+    <androidx.cardview.widget.CardView
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/patient_btn_container"
+        android:id="@+id/doctor_btn_container"
+        app:cardElevation = "16dp"
+        app:cardCornerRadius = "160dp"
+        android:layout_margin = "16dp"
+        android:foregroundGravity = "center"
+        android:layout_centerInParent = "true"
+        android:visibility="visible"
+        android:layout_width = "200dp"
+        android:layout_height = "200dp">
+
+        <!-- simple image view -->
+<!--        <TextView-->
+<!--            android:layout_width = "wrap_content"-->
+<!--            android:layout_height = "wrap_content"-->
+<!--            android:text="I'm a Doctor"-->
+<!--            android:layout_gravity="center|center_vertical"-->
+<!--            android:textSize="22dp"/>-->
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:lottie_rawRes="@raw/doctor_logo"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/doctor_text_view"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/doctor_btn_container"
+                app:layout_constraintBottom_toTopOf="@id/patient_btn_container"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text="I'm a Doctor"
+                app:layout_constraintVertical_bias="0.2"
+                android:layout_gravity="center|center_vertical"
+                android:textSize="22dp"/>
+
+    <androidx.cardview.widget.CardView
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/doctor_btn_container"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/patient_btn_container"
+        app:cardElevation = "16dp"
+        app:cardCornerRadius = "160dp"
+        android:layout_margin = "16dp"
+        android:foregroundGravity = "center"
+        android:layout_centerInParent = "true"
+        android:layout_width = "200dp"
+        android:layout_height = "200dp">
+
+        <!-- simple image view -->
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:lottie_url="https://assets10.lottiefiles.com/packages/lf20_vPnn3K.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/patient_text_view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/patient_btn_container"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text="I'm a Patient"
+        app:layout_constraintVertical_bias="0.2"
+        android:layout_gravity="center|center_vertical"
+        android:textSize="22dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

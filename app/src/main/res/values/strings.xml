@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Medical Consulter app</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="doctor_database_child_name">doctors</string>
+    <string name="patient_database_child_name">patients</string>
+    <string name="user_contact_no_extra_tag">DOCTOR_CONTACT_NUMBER</string>
+    <string name="PATIENT_ID_EXTRA_TAG">PATIENT_ID</string>
+    <string name="PATIENT_NAME_EXTRA_TAG">PATIENT_NAME</string>
+    <string name="DOCTOR_ID_EXTRA_TAG">DOCTOR_ID</string>
+    <string name="DOCTOR_NAME_EXTRA_TAG">DOCTOR_NAME</string>
+    <string name="SENDER_TYPE_EXTRA_TAG">SENDER_TYPE</string>
+
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ashwi/AndroidStudioProjects/CallingApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.131" />
+        <entry key="..\:/Users/ashwi/AndroidStudioProjects/CallingApp/app/src/main/res/layout/activity_doctor.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ashwi/AndroidStudioProjects/CallingApp/app/src/main/res/layout/activity_login.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ashwi/AndroidStudioProjects/CallingApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/ashwi/AndroidStudioProjects/CallingApp/app/src/main/res/layout/activity_messaging.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ashwi/AndroidStudioProjects/CallingApp/app/src/main/res/layout/activity_patient.xml" value="0.176" />
+        <entry key="..\:/Users/ashwi/AndroidStudioProjects/CallingApp/app/src/main/res/layout/activity_splash_screen.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ashwi/AndroidStudioProjects/CallingApp/app/src/main/res/layout/description_snackbar.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ashwi/AndroidStudioProjects/CallingApp/app/src/main/res/layout/doctor_list_item.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ashwi/AndroidStudioProjects/CallingApp/app/src/main/res/layout/fragment_first.xml" value="0.1125" />
+        <entry key="..\:/Users/ashwi/AndroidStudioProjects/CallingApp/app/src/main/res/layout/fragment_second.xml" value="0.1265625" />
+        <entry key="..\:/Users/ashwi/AndroidStudioProjects/CallingApp/app/src/main/res/layout/item_message.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ashwi/AndroidStudioProjects/CallingApp/app/src/main/res/layout/patient_list_item.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ashwi/AndroidStudioProjects/CallingApp/app/src/main/res/layout/prompts.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ashwi/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/auto_complete_list.xml" value="0.27447916666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
