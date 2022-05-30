@@ -23,6 +23,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.android.callingapp.adapters.PatientAdapter;
+import com.example.android.callingapp.doctorLogin.LoginActivity;
 import com.example.android.callingapp.firebase.FirebaseHelper;
 import com.example.android.callingapp.DataObjects.Doctor;
 import com.example.android.callingapp.DataObjects.Patient;
@@ -79,6 +80,7 @@ public class PatientActivity extends AppCompatActivity {
                 Patient currentPatient=snapshot.getValue(Patient.class);
                 if(currentPatient.getDoctor().getTelephone().equals(doctorContact)) {
                     adapter.add(currentPatient);
+
                     patientsListView.smoothScrollToPosition(adapter.getCount());
                 }
             }
@@ -111,6 +113,8 @@ public class PatientActivity extends AppCompatActivity {
                 return false;
             }
         });
+
+
     }
 
     private void makeSnackbar(Patient patient, View v) {
@@ -170,7 +174,7 @@ public class PatientActivity extends AppCompatActivity {
 
 
     public void getPatientsList(){
-
+        progressBar.setVisibility(View.VISIBLE);
         patientDatabaseRefernece.get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
             @Override
             public void onComplete(@NonNull Task<DataSnapshot> task) {
@@ -195,12 +199,25 @@ public class PatientActivity extends AppCompatActivity {
 
     public void dummyPatients(){
         Doctor doctors[]={
-                new Doctor("Ashwin","Neurosurgeon","8382922600"),
-                new Doctor("Deepak","Compounder","8318158803")};
+                new Doctor("Dr. Ashwin George","Neurologist","8382922601"),
+                new Doctor("Dr. Deepak Khandelwal","Child Specialist","8382922602"),
+                new Doctor("Dr. Anubhav Tripathi","Chiropractor","8382922603"),
+                new Doctor("Dr. Farha Khan","Gynaceologist","8382922604"),
+                new Doctor("Dr. Ayush Singh","Dermatalogist","8382922605"),
+                new Doctor("Dr. Vasu Jain","Gastroenterologist","8382922606"),
+                new Doctor("Dr. Raj Priyadarshi","Hepatologist","8382922607"),
+                new Doctor("Dr. Nisha Singh","ENT Specialist","8382922608"),
+                new Doctor("Dr. Ashutosh Gupta","Urologist","8382922609")
+        };
         Patient patients[]={
-                new Patient("Farha","8382922600","F","Normal","Mild Fever and cough",doctors[0]),
-                new Patient("Ayush","8765351472","M","Critical","Severe bone damage and Cranial damage",doctors[1]),
-                new Patient("Raj","8318158803","M","Under Observation","Liver Damage",doctors[0])
+                new Patient("Ankit Kumar","8765351470","M","Normal","Mild Fever and cough",doctors[0]),
+                new Patient("Deeksha Sharma","8765351471","F","Critical","Severe bone damage and Cranial damage",doctors[2]),
+                new Patient("Nitya Patyal","8765351472","F","Critical","Mental Disorder",doctors[0]),
+                new Patient("Priyanshu Ladha","8765351473","M","Undergoing treatment","Stiff Joints and Bones",doctors[2]),
+                new Patient("Kritika Gupta","8765351474","F","Under Observation","High fever and cough",doctors[3]),
+                new Patient("Ayush Kumar Singh","8765351475","M","Critical","Severe Stomach Ache",doctors[5]),
+                new Patient("Anmol Garg","8765351476","M","Ongoing Treatment","Hairfall and Dead Skin",doctors[4]),
+                new Patient("Gauransh Madan","87656351477","M","Recovered","Pain in ear canal",doctors[7])
         };
 
         for(Patient patient:patients){
@@ -255,8 +272,5 @@ public class PatientActivity extends AppCompatActivity {
         }
     }
 
-    @Override
-    public void onBackPressed() {
 
-    }
 }

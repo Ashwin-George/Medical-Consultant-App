@@ -45,6 +45,7 @@ import com.google.firebase.database.DatabaseReference;
 
 import java.util.ArrayList;
 import java.util.Locale;
+import java.util.function.DoubleConsumer;
 
 
 public class DoctorsActivity extends AppCompatActivity {
@@ -260,32 +261,22 @@ public class DoctorsActivity extends AppCompatActivity {
         alertDialogBuilder.setIcon(android.R.drawable.sym_action_chat);
         alertDialogBuilder.setTitle("Patient Details");
         alertDialog = alertDialogBuilder.create();
-//        alertDialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
-//            @Override
-//            public void onDismiss(DialogInterface dialog) {
-//
-//                Intent intent = new Intent(DoctorsActivity.this, MessagingActivity.class);
-//                intent.putExtra(getResources().getString(R.string.DOCTOR_NAME_EXTRA_TAG), doctor.getName());
-//                intent.putExtra(getResources().getString(R.string.DOCTOR_ID_EXTRA_TAG), doctor.getTelephone());
-//                intent.putExtra(getResources().getString(R.string.PATIENT_NAME_EXTRA_TAG), patientName);
-//                intent.putExtra(getResources().getString(R.string.PATIENT_ID_EXTRA_TAG), patientContact);
-//                intent.putExtra(getResources().getString(R.string.SENDER_TYPE_EXTRA_TAG), 1);
-//                startActivity(intent);
-//
-//            }
-//        });
-
-        // show it
         alertDialog.show();
-
-
     }
 
 
     public void dummyDoctors(){
         Doctor doctors[]={
-                new Doctor("Ashwin","Neurosurgeon","8382922600"),
-                new Doctor("Deepak","Compounder","8318158803")};
+                new Doctor("Dr. Ashwin George","Neurologist","8382922601"),
+                new Doctor("Dr. Deepak Khandelwal","Child Specialist","8382922602"),
+                new Doctor("Dr. Anubhav Tripathi","Chiropractor","8382922603"),
+                new Doctor("Dr. Farha Khan","Gynaceologist","8382922604"),
+                new Doctor("Dr. Ayush Singh","Dermatalogist","8382922605"),
+                new Doctor("Dr. Vasu Jain","Gastroenterologist","8382922606"),
+                new Doctor("Dr. Raj Priyadarshi","Hepatologist","8382922607"),
+                new Doctor("Dr. Nisha Singh","ENT Specialist","8382922608"),
+                new Doctor("Dr. Ashutosh Gupta","Urologist","8382922609")
+        };
 
         for(Doctor doc:doctors){
             helper.addDoctor(doc).addOnSuccessListener(new OnSuccessListener<Void>() {

@@ -11,14 +11,10 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.Toast;
-import android.widget.VideoView;
 
-import com.airbnb.lottie.LottieAnimationView;
 import com.example.android.callingapp.PatientActivity;
 import com.example.android.callingapp.R;
 import com.example.android.callingapp.firebase.FirebaseHelper;
@@ -155,8 +151,16 @@ public class LoginActivity extends AppCompatActivity {
     public void dummyLoginInfo(){
         progressBar.setVisibility(View.VISIBLE);
         LoginCredential credentials[]={
-                new LoginCredential("8382922600","123456"),
-                new LoginCredential("8318158803","123456")
+                new LoginCredential("8382922601","123456", "Dr. Ashwin George"),
+                new LoginCredential("8382922602","123456", "Dr. Deepak Khandelwal"),
+                new LoginCredential("8382922603","123456", "Dr. Anubhav Tripathi"),
+                new LoginCredential("8382922604","123456", "Dr. Farha Khan"),
+                new LoginCredential("8382922605","123456", "Dr. Ayush Singh"),
+                new LoginCredential("8382922606","123456", "Dr. Vasu Jain"),
+                new LoginCredential("8382922607","123456", "Dr. Raj Priyadarshi"),
+                new LoginCredential("8382922608","123456", "Dr. Nisha Singh"),
+                new LoginCredential("8382922609","123456","Dr. Ashutosh Gupta")
+
 
         };
 

@@ -15,7 +15,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="@id/patient_list_view"
         app:layout_constraintRight_toRightOf="@id/patient_list_view"
-        android:visibility="visible"
+        android:visibility="invisible"
         />
 
     <ListView
@@ -41,6 +41,7 @@
         android:src="@android:drawable/ic_input_add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        android:visibility="gone"
         />
 
 
